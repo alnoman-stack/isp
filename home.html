@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- favicon -->
+   <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+   <!-- Home title -->
+   <title>ISP</title>
+
+   <!-- ---------------------------All cdn -------------------------------------------------->
+   <!-- font awesome cdn -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+   <!-- --------------------all cdn end ------------------------------------------------------>
+
+   <!------------------------------ All css--------------------------------------------------->
+   <!-- global css -->
+   <link rel="stylesheet" href="css/global.css">
+   <!-- home css -->
+   <link rel="stylesheet" href="css/home.css">
+   <!------------------------------ All css end------------------------------------------------->
+</head>
+<body>
+<!-- top bar start -->
+   <header id="header">
+      <div class="topbar">
+         <!-- top left -->
+         <div class="top-left">
+            <div class="topbar-icon">
+               <span><i class="fa fa-sliders" aria-hidden="true"></i></span>
+            </div>
+            <div class="topbar-logo">
+               <h3>Meta Soft</h3>
+            </div>
+         </div>
+         <!-- top right -->
+         <div class="top-right">
+            <div class="topbar-search-box">
+               <span><i class="fa fa-search" aria-hidden="true"></i></span>
+               <input type="search" placeholder="search..">
+            </div>
+            <div class="user-info">
+              <div class="user-info-icon">
+                  <span class="user-icon"><i class="fa fa-plus-circle" aria-hidden="true"></i></span>
+                  <span class="user-icon"><i class="fa fa-th-large" aria-hidden="true"></i></span>
+                  <!-- <span class="user-icon bell-icon"><i class="fa fa-bell-o" aria-hidden="true"></i></span> -->
+                  <div class="notification">
+                     <span class="num">3</span>
+                  </div>
+                  <!-- notification popup -->
+                  <div class="dropdown-noti">
+                     <button class="dropbtn-noti"><span class="user-icon bell-icon"><i class="fa fa-bell-o" aria-hidden="true"></i></span></button>
+                     <div class="dropdown-content-noti">
+                        <p >You have 3 new message <span class="view-btn">View all</span></p>
+                        <div class="message-area">
+                           <span><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+                           <div class="noti-content">
+                              <h5 class="msgTitle">Lorem ipsum</h5>
+                              <p>Lorem ipsum dolor sit.</p>
+                              <span>30 min age</span>
+                           </div>
+                        </div>
+
+                        <div class="message-area">
+                           <span><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+                           <div class="noti-content">
+                              <h5 class="msgTitle">Lorem ipsum</h5>
+                              <p>Lorem ipsum dolor sit.</p>
+                              <span>30 min age</span>
+                           </div>
+                        </div>
+                        <div class="message-area">
+                           <span><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+                           <div class="noti-content">
+                              <h5 class="msgTitle">Lorem ipsum</h5>
+                              <p>Lorem ipsum dolor sit.</p>
+                              <span>30 min age</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+              </div>
+               <div class="user-info-img">
+                  <!-- popup box for user -->
+                  <div class="dropdown">
+                        <img onclick="profilePopUp()" class="dropbtn" src="./images/user.jpg" alt="user">
+                     <div id="myDropdown" class="dropdown-content">
+                       <div class="usr-info">
+                        <h3>Anderson Mikle</h3>
+                        <p>Web developer</p>
+                       </div>
+                        <a href="#"><i class="fa fa-user-o" aria-hidden="true"></i> My Profile</a>
+                        <a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Account Setting</a>
+                        <a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> Need help</a>
+                        <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign Out</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+<!-- top bar end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <!-- awn js -->
+   <script src="./js/home.js"></script>
+   
+</body>
+</html>

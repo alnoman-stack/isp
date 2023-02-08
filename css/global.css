@@ -1,0 +1,46 @@
+/* raleway google font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); 
+/* poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   outline: none;
+}
+
+body{
+   /* font-family: 'Raleway', sans-serif; */
+   font-family: 'Poppins', sans-serif;
+   
+}
+
+/* ---------------- partition  column--------------- */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+/* ----------------end partition  column--------------- */
+
+a{
+   text-decoration: none;
+}
+ul{
+   list-style-type: none;
+}
+:root {
+   --bgColor: #F0F1F6;
+  --primary: #0A99E7;
+  --secondary: #B0E8EB;
+  --thirdColor: #FAEAAD;
+  
+}
