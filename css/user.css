@@ -1,0 +1,48 @@
+.data_table_custom{
+   margin-left: 15%;
+   padding: 2rem;
+   margin-top: 4rem;
+}
+.data_table_custom tr, td{
+   font-size: 1rem;
+}
+button.dt-button.buttons-copy.buttons-html5,
+button.dt-button.buttons-csv.buttons-html5,
+button.dt-button.buttons-excel.buttons-html5,
+button.dt-button.buttons-pdf.buttons-html5 ,
+button.dt-button.buttons-print {
+    background: #FBC013;
+    border: none;
+    padding: .5rem 1.8rem;
+    color: #000;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button.dt-button.buttons-copy.buttons-html5 {
+    background: var(--secondary);
+   
+}
+
+button.dt-button.buttons-excel.buttons-html5 {
+    background: #30AF70;
+
+}
+button.dt-button.buttons-pdf.buttons-html5{
+   background: #FD260D;
+   
+}
+
+button.dt-button.buttons-print {
+    background: #9ACD32;
+   
+}
+.dataTables_wrapper .dataTables_filter input {
+    margin-left: 0.5em;
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    width: 300px;
+    font-size: 1rem;
+} 

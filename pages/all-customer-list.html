@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- favicon -->
+   <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+   <!-- Home title -->
+   <title>ISP</title>
+
+   <!-- ---------------------------All cdn -------------------------------------------------->
+   <!-- font awesome cdn -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- data table -->
+    <link rel="stylesheet" type="text/css"
+      href="https://cdn.datatables.net/v/dt/dt-1.10.12/af-2.1.2/cr-1.3.2/rr-1.1.2/sc-1.4.2/datatables.min.css" />
+   
+   <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" /> -->
+   <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.12/css/dataTables.bootstrap.min.css" /> -->
+
+   <!-- --------------------all cdn end ------------------------------------------------------>
+   <!-- global css -->
+   <link rel="stylesheet" href="../css/global.css">
+   <!-- home css -->
+   <link rel="stylesheet" href="../css/home.css">
+   <link rel="stylesheet" href="../css/user.css">
+
+</head>
+
+<body>
+   <!-- top bar start -->
+   <header id="header">
+      <div class="topbar">
+         <!-- top left -->
+         <div class="top-left">
+            <div class="topbar-icon">
+               <span><i class="fa fa-sliders" aria-hidden="true"></i></span>
+            </div>
+            <a href="./home.html" class="topbar-logo">
+               <h3>Meta Soft</h3>
+            </a>
+         </div>
+         <!-- top right -->
+         <div class="top-right">
+            <div class="topbar-search-box">
+               <span><i class="fa fa-search" aria-hidden="true"></i></span>
+               <input type="search" placeholder="search..">
+            </div>
+            <div class="user-info">
+               <div class="user-info-icon">
+                  <span class="user-icon"><i class="fa fa-plus-circle" aria-hidden="true"></i></span>
+                  <span class="user-icon"><i class="fa fa-th-large" aria-hidden="true"></i></span>
+                  <!-- <span class="user-icon bell-icon"><i class="fa fa-bell-o" aria-hidden="true"></i></span> -->
+                  <div class="notification">
+                     <span class="num">3</span>
+                  </div>
+                  <!-- notification popup -->
+                  <div class="dropdown-noti">
+                     <button class="dropbtn-noti"><span class="user-icon bell-icon"><i class="fa fa-bell-o"
+                              aria-hidden="true"></i></span></button>
+                     <div class="dropdown-content-noti">
+                        <p>You have 3 new message <span class="view-btn">View all</span></p>
+                        <div class="message-area">
+                           <span><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+                           <div class="noti-content">
+                              <h5 class="msgTitle">Lorem ipsum</h5>
+                              <p>Lorem ipsum dolor sit.</p>
+                              <span>30 min age</span>
+                           </div>
+                        </div>
+
+                        <div class="message-area">
+                           <span><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+                           <div class="noti-content">
+                              <h5 class="msgTitle">Lorem ipsum</h5>
+                              <p>Lorem ipsum dolor sit.</p>
+                              <span>30 min age</span>
+                           </div>
+                        </div>
+                        <div class="message-area">
+                           <span><i class="fa fa-exclamation-circle" aria-hidden="true"></i></span>
+                           <div class="noti-content">
+                              <h5 class="msgTitle">Lorem ipsum</h5>
+                              <p>Lorem ipsum dolor sit.</p>
+                              <span>30 min age</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="user-info-img">
+                  <!-- popup box for user -->
+                  <div class="dropdown">
+                     <img onclick="profilePopUp()" class="dropbtn" src="../images/user.jpg" alt="user">
+                     <div id="myDropdown" class="dropdown-content">
+                        <div class="usr-info">
+                           <h3>Anderson Mikle</h3>
+                           <p>Web developer</p>
+                        </div>
+                        <a href="#"><i class="fa fa-user-o" aria-hidden="true"></i> My Profile</a>
+                        <a href="#"><i class="fa fa-cog" aria-hidden="true"></i> Account Setting</a>
+                        <a href="#"><i class="fa fa-question-circle" aria-hidden="true"></i> Need help</a>
+                        <a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i> Sign Out</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+   <!-- top bar end -->
+
+   <!-- side bar start -->
+   <section id="main_section">
+      <div class="sidebar">
+         <ul class="sidebar_lists">
+            <li class="list_item">
+               <a class="sidebar_a" href="./home.html">
+                  <i class="fa fa-home" aria-hidden="true"></i>
+                  Home
+               </a>
+            </li>
+            <li class="list_item">
+               <a href="./all-customer-list.html">
+                  <i class="fa fa-users" aria-hidden="true"></i>
+                  Users
+               </a>
+            </li>
+            <li class="list_item">
+               <a href="#">
+                  <i class="fa fa-plus" aria-hidden="true"></i>
+                  Add new user
+               </a>
+            </li>
+            <li class="list_item">
+               <a href="#">
+                  <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                  Problems
+               </a>
+            </li>
+            <li class="list_item">
+               <a href="#">
+                  <i class="fa fa-times-circle" aria-hidden="true"></i>
+                  Close Request
+               </a>
+            </li>
+         </ul>
+      </div>
+
+      
+      
+      <!------------- All user table  ---------->
+      <div class="data_table_custom">
+         <table id="example" class="display nowrap">
+            <thead>
+               <tr>
+                  <th>No</th>
+                  <th>Name</th>
+                  <th>User Id</th>
+                  <th>User Name</th>
+                  <td style="font-size: 22px; font-weight: 700;">Password</td>
+                  <th>Package</th>
+                  <th>Phone</th>
+                  <th>Address</th>
+                  <th>In Date</th>
+                  <th>Expire Date</th>
+                  <!-- <th>Package</th> -->
+                  <th>S.amount</th>
+                  <th>P.Amount</th>
+                  <th>Viwe</th>
+                  <th>Edit</th>
+                  <th>En/Des</th>
+                  <th>Delete</th>
+                  <th>Pay Bill</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td>01</td>
+                  <td>Noman</td>
+                  <td>5001</td>
+                  <td>Noamn123</td>
+                  <td>Noamn123</td>
+                  <td>Package-1</td>
+                  <td>01611848597</td>
+                  <td>Houe-12 <br> Road-Limited#2</td>
+                  <td>10-1-2022</td>
+                  <td>10-14-2022</td>
+                  <td>500</td>
+                  <td>500</td>
+                  <td>View</td>
+                  <td>Edit</td>
+                  <td>En/Des</td>
+                  <td>Delete</td>
+                  <td>Pay</td>
+               </tr>
+               <tr>
+                  <td>01</td>
+                  <td>Noman</td>
+                  <td>5001</td>
+                  <td>Noamn123</td>
+                  <td>Noamn123</td>
+                  <td>Package-1</td>
+                  <td>01611848597</td>
+                  <td>Houe-12 <br> Road-Limited#2</td>
+                  <td>10-1-2022</td>
+                  <td>10-14-2022</td>
+                  <td>500</td>
+                  <td>500</td>
+                  <td>View</td>
+                  <td>Edit</td>
+                  <td>En/Des</td>
+                  <td>Delete</td>
+                  <td>Pay</td>
+               </tr>
+               <tr>
+                  <td>01</td>
+                  <td>Noman</td>
+                  <td>5001</td>
+                  <td>Noamn123</td>
+                  <td>Noamn123</td>
+                  <td>Package-1</td>
+                  <td>01611848597</td>
+                  <td>Houe-12 <br> Road-Limited#2</td>
+                  <td>10-1-2022</td>
+                  <td>10-14-2022</td>
+                  <td>500</td>
+                  <td>500</td>
+                  <td>View</td>
+                  <td>Edit</td>
+                  <td>En/Des</td>
+                  <td>Delete</td>
+                  <td>Pay</td>
+               </tr>
+               <tr>
+                  <td>01</td>
+                  <td>Noman</td>
+                  <td>5001</td>
+                  <td>Noamn123</td>
+                  <td>Noamn123</td>
+                  <td>Package-1</td>
+                  <td>01611848597</td>
+                  <td>Houe-12 <br> Road-Limited#2</td>
+                  <td>10-1-2022</td>
+                  <td>10-14-2022</td>
+                  <td>500</td>
+                  <td>500</td>
+                  <td>View</td>
+                  <td>Edit</td>
+                  <td>En/Des</td>
+                  <td>Delete</td>
+                  <td>Pay</td>
+               </tr>
+               <tr>
+                  <td>01</td>
+                  <td>Noman</td>
+                  <td>5001</td>
+                  <td>Noamn123</td>
+                  <td>Noamn123</td>
+                  <td>Package-1</td>
+                  <td>01611848597</td>
+                  <td>Houe-12 <br> Road-Limited#2</td>
+                  <td>10-1-2022</td>
+                  <td>10-14-2022</td>
+                  <td>500</td>
+                  <td>500</td>
+                  <td>View</td>
+                  <td>Edit</td>
+                  <td>En/Des</td>
+                  <td>Delete</td>
+                  <td>Pay</td>
+               </tr>
+               <tr>
+                  <td>01</td>
+                  <td>Noman</td>
+                  <td>5001</td>
+                  <td>Noamn123</td>
+                  <td>Noamn123</td>
+                  <td>Package-1</td>
+                  <td>01611848597</td>
+                  <td>Houe-12 <br> Road-Limited#2</td>
+                  <td>10-1-2022</td>
+                  <td>10-14-2022</td>
+                  <td>500</td>
+                  <td>500</td>
+                  <td>View</td>
+                  <td>Edit</td>
+                  <td>En/Des</td>
+                  <td>Delete</td>
+                  <td>Pay</td>
+               </tr>
+               <tr>
+                  <td>01</td>
+                  <td>Noman</td>
+                  <td>5001</td>
+                  <td>Noamn123</td>
+                  <td>Noamn123</td>
+                  <td>Package-1</td>
+                  <td>01611848597</td>
+                  <td>Houe-12 <br> Road-Limited#2</td>
+                  <td>10-1-2022</td>
+                  <td>10-14-2022</td>
+                  <td>500</td>
+                  <td>500</td>
+                  <td>View</td>
+                  <td>Edit</td>
+                  <td>En/Des</td>
+                  <td>Delete</td>
+                  <td>Pay</td>
+               </tr>
+               <tr>
+                  <td>01</td>
+                  <td>Noman</td>
+                  <td>5001</td>
+                  <td>Noamn123</td>
+                  <td>Noamn123</td>
+                  <td>Package-1</td>
+                  <td>01611848597</td>
+                  <td>Houe-12 <br> Road-Limited#2</td>
+                  <td>10-1-2022</td>
+                  <td>10-14-2022</td>
+                  <td>500</td>
+                  <td>500</td>
+                  <td>View</td>
+                  <td>Edit</td>
+                  <td>En/Des</td>
+                  <td>Delete</td>
+                  <td>Pay</td>
+               </tr>
+               <tr>
+                  <td>01</td>
+                  <td>Noman</td>
+                  <td>5001</td>
+                  <td>Noamn123</td>
+                  <td>Noamn123</td>
+                  <td>Package-1</td>
+                  <td>01611848597</td>
+                  <td>Houe-12 <br> Road-Limited#2</td>
+                  <td>10-1-2022</td>
+                  <td>10-14-2022</td>
+                  <td>500</td>
+                  <td>500</td>
+                  <td>View</td>
+                  <td>Edit</td>
+                  <td>En/Des</td>
+                  <td>Delete</td>
+                  <td>Pay</td>
+               </tr>
+               <tr>
+                  <td>01</td>
+                  <td>Noman</td>
+                  <td>5001</td>
+                  <td>Noamn123</td>
+                  <td>Noamn123</td>
+                  <td>Package-1</td>
+                  <td>01611848597</td>
+                  <td>Houe-12 <br> Road-Limited#2</td>
+                  <td>10-1-2022</td>
+                  <td>10-14-2022</td>
+                  <td>500</td>
+                  <td>500</td>
+                  <td>View</td>
+                  <td>Edit</td>
+                  <td>En/Des</td>
+                  <td>Delete</td>
+                  <td>Pay</td>
+               </tr>
+               <tr>
+                  <td>01</td>
+                  <td>Noman</td>
+                  <td>5001</td>
+                  <td>Noamn123</td>
+                  <td>Noamn123</td>
+                  <td>Package-1</td>
+                  <td>01611848597</td>
+                  <td>Houe-12 <br> Road-Limited#2</td>
+                  <td>10-1-2022</td>
+                  <td>10-14-2022</td>
+                  <td>500</td>
+                  <td>500</td>
+                  <td>View</td>
+                  <td>Edit</td>
+                  <td>En/Des</td>
+                  <td>Delete</td>
+                  <td>Pay</td>
+               </tr>
+               <tr>
+                  <td>01</td>
+                  <td>Noman</td>
+                  <td>5001</td>
+                  <td>Noamn123</td>
+                  <td>Noamn123</td>
+                  <td>Package-1</td>
+                  <td>01611848597</td>
+                  <td>Houe-12 <br> Road-Limited#2</td>
+                  <td>10-1-2022</td>
+                  <td>10-14-2022</td>
+                  <td>500</td>
+                  <td>500</td>
+                  <td>View</td>
+                  <td>Edit</td>
+                  <td>En/Des</td>
+                  <td>Delete</td>
+                  <td>Pay</td>
+               </tr>
+               <tr>
+                  <td>01</td>
+                  <td>Noman</td>
+                  <td>5001</td>
+                  <td>Noamn123</td>
+                  <td>Noamn123</td>
+                  <td>Package-1</td>
+                  <td>01611848597</td>
+                  <td>Houe-12 <br> Road-Limited#2</td>
+                  <td>10-1-2022</td>
+                  <td>10-14-2022</td>
+                  <td>500</td>
+                  <td>500</td>
+                  <td>View</td>
+                  <td>Edit</td>
+                  <td>En/Des</td>
+                  <td>Delete</td>
+                  <td>Pay</td>
+               </tr>
+               <tr>
+                  <td>01</td>
+                  <td>Noman</td>
+                  <td>5001</td>
+                  <td>Noamn123</td>
+                  <td>Noamn123</td>
+                  <td>Package-1</td>
+                  <td>01611848597</td>
+                  <td>Houe-12 <br> Road-Limited#2</td>
+                  <td>10-1-2022</td>
+                  <td>10-14-2022</td>
+                  <td>500</td>
+                  <td>500</td>
+                  <td>View</td>
+                  <td>Edit</td>
+                  <td>En/Des</td>
+                  <td>Delete</td>
+                  <td>Pay</td>
+               </tr>
+               <tr>
+                  <td>01</td>
+                  <td>Noman</td>
+                  <td>5001</td>
+                  <td>Noamn123</td>
+                  <td>Noamn123</td>
+                  <td>Package-1</td>
+                  <td>01611848597</td>
+                  <td>Houe-12 <br> Road-Limited#2</td>
+                  <td>10-1-2022</td>
+                  <td>10-14-2022</td>
+                  <td>500</td>
+                  <td>500</td>
+                  <td>View</td>
+                  <td>Edit</td>
+                  <td>En/Des</td>
+                  <td>Delete</td>
+                  <td>Pay</td>
+               </tr>
+               <tr>
+                  <td>01</td>
+                  <td>Noman</td>
+                  <td>5001</td>
+                  <td>Noamn123</td>
+                  <td>Noamn123</td>
+                  <td>Package-1</td>
+                  <td>01611848597</td>
+                  <td>Houe-12 <br> Road-Limited#2</td>
+                  <td>10-1-2022</td>
+                  <td>10-14-2022</td>
+                  <td>500</td>
+                  <td>500</td>
+                  <td>View</td>
+                  <td>Edit</td>
+                  <td>En/Des</td>
+                  <td>Delete</td>
+                  <td>Pay</td>
+               </tr>
+               <tr>
+                  <td>01</td>
+                  <td>Noman</td>
+                  <td>5001</td>
+                  <td>Noamn123</td>
+                  <td>Noamn123</td>
+                  <td>Package-1</td>
+                  <td>01611848597</td>
+                  <td>Houe-12 <br> Road-Limited#2</td>
+                  <td>10-1-2022</td>
+                  <td>10-14-2022</td>
+                  <td>500</td>
+                  <td>500</td>
+                  <td>View</td>
+                  <td>Edit</td>
+                  <td>En/Des</td>
+                  <td>Delete</td>
+                  <td>Pay</td>
+               </tr>
+               <tr>
+                  <td>01</td>
+                  <td>Noman</td>
+                  <td>5001</td>
+                  <td>Noamn123</td>
+                  <td>Noamn123</td>
+                  <td>Package-1</td>
+                  <td>01611848597</td>
+                  <td>Houe-12 <br> Road-Limited#2</td>
+                  <td>10-1-2022</td>
+                  <td>10-14-2022</td>
+                  <td>500</td>
+                  <td>500</td>
+                  <td>View</td>
+                  <td>Edit</td>
+                  <td>En/Des</td>
+                  <td>Delete</td>
+                  <td>Pay</td>
+               </tr>
+               <tr>
+                  <td>01</td>
+                  <td>Noman</td>
+                  <td>5001</td>
+                  <td>Noamn123</td>
+                  <td>Noamn123</td>
+                  <td>Package-1</td>
+                  <td>01611848597</td>
+                  <td>Houe-12 <br> Road-Limited#2</td>
+                  <td>10-1-2022</td>
+                  <td>10-14-2022</td>
+                  <td>500</td>
+                  <td>500</td>
+                  <td>View</td>
+                  <td>Edit</td>
+                  <td>En/Des</td>
+                  <td>Delete</td>
+                  <td>Pay</td>
+               </tr>
+               <tr>
+                  <td>01</td>
+                  <td>Noman</td>
+                  <td>5001</td>
+                  <td>Noamn123</td>
+                  <td>Noamn123</td>
+                  <td>Package-1</td>
+                  <td>01611848597</td>
+                  <td>Houe-12 <br> Road-Limited#2</td>
+                  <td>10-1-2022</td>
+                  <td>10-14-2022</td>
+                  <td>500</td>
+                  <td>500</td>
+                  <td>View</td>
+                  <td>Edit</td>
+                  <td>En/Des</td>
+                  <td>Delete</td>
+                  <td>Pay</td>
+               </tr>
+               <tr>
+                  <td>01</td>
+                  <td>Noman</td>
+                  <td>5001</td>
+                  <td>Noamn123</td>
+                  <td>Noamn123</td>
+                  <td>Package-1</td>
+                  <td>01611848597</td>
+                  <td>Houe-12 <br> Road-Limited#2</td>
+                  <td>10-1-2022</td>
+                  <td>10-14-2022</td>
+                  <td>500</td>
+                  <td>500</td>
+                  <td>View</td>
+                  <td>Edit</td>
+                  <td>En/Des</td>
+                  <td>Delete</td>
+                  <td>Pay</td>
+               </tr>
+               
+               
+      
+      
+      
+      
+            </tbody>
+         </table>
+      </div>
+
+
+   </section>
+   
+
+
+
+   <!-------------- e-chart cdn -------------------->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.4.1/echarts.min.js"
+      integrity="sha512-OTbGFYPLe3jhy4bUwbB8nls0TFgz10kn0TLkmyA+l3FyivDs31zsXCjOis7YGDtE2Jsy0+fzW+3/OVoPVujPmQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!-- data table cdn  -->
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+      <script src="https://cdn.datatables.net/buttons/2.3.4/js/dataTables.buttons.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js
+      "></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+      <script src="
+      https://cdn.datatables.net/buttons/2.3.4/js/buttons.html5.min.js"></script>
+      <script src="
+      https://cdn.datatables.net/buttons/2.3.4/js/buttons.print.min.js"></script>
+
+   <!-- awn js -->
+   <script src="../js/home.js"></script>
+   <script src="../js/allUser.js"></script>
+
+</body>
+
+</html>

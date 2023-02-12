@@ -2,12 +2,19 @@
    /* overflow: hidden; */
    padding: .5rem 1rem;
    border: 1px solid #F0F1F6;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #Fff;
+  z-index: 99;
 }
 /* topbar left */
 .topbar{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
 }
 .top-left{
    display: flex;
@@ -32,6 +39,8 @@
    letter-spacing: 3px;
    margin-left: 2rem;
    cursor: pointer;
+   font-style: italic;
+   text-shadow: 1px 2px 2px var(--primary);
 }
 
 
@@ -117,13 +126,8 @@
    width: 50px;
    height: 50px;
    border-radius: 50%;
-   -webkit-border-radius: 50%;
-   -moz-border-radius: 50%;
-   -ms-border-radius: 50%;
-   -o-border-radius: 50%;
    border: 1px solid var(--primary);
    margin-left: 1rem;
-   
 }
 /* notification popup start */
 
@@ -271,3 +275,343 @@
 .show {display: block;}
 
 /* end popup box when user click profile image */
+
+
+/* main_section start */
+
+#main_section .sidebar{
+   width: 15%;
+   height: 100%;
+   background-color: gray;
+   position: fixed;
+   left: 0;
+   top: 7.7%;
+   background-color: #fff;
+   padding: 1rem 0;
+   overflow-y: scroll;
+}
+.sidebar ul li{
+    padding: 0.5rem 0.8rem;
+   cursor: pointer;
+}
+.sidebar ul li a{
+   font-size: 1.3rem ;
+   
+}
+
+.sidebar_lists .fa-home,
+.sidebar_lists .fa-users,
+.sidebar_lists .fa-plus,
+.sidebar_lists .fa-exclamation-triangle,
+.sidebar_lists .fa-times-circle{
+   font-size: 1.5rem;
+   color: var(--primary);
+   margin-right: 1rem;
+   opacity: .6;
+}
+
+.list_item:hover{
+   background-color: #F2F2F2;
+}
+
+/* text anim */
+
+.typewriter {
+	width: 21.5ch;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 4px solid #212121;
+	animation: cursor 1s step-start infinite, 
+    text 5s steps(18) alternate infinite;
+}
+
+@keyframes cursor {
+	0%, 100% { 
+    border-color: #212121; 
+  }
+}
+
+@keyframes text {
+	0% { 
+    width: 0; 
+  }
+	100% { 
+    width: 21.5ch; 
+  }
+}
+/* main_content start */
+
+#main_section .main_content{
+  width: 85%;
+   margin-left: 15%;
+   background-color: var(--bgColor);
+   padding: 1.3rem;
+   
+}
+.log-user{
+   margin-top: 4.7%;
+   align-items: center;
+   justify-content: space-between;
+   border-bottom: 1px solid #dcdde4;
+}
+.left p{
+   font-size: 1.3rem;
+   letter-spacing: 3px;
+}
+.calender{
+   background-color: #fff;
+    border: 1px solid #F0F1F6;
+   margin-bottom: 3rem;
+   width: 320px;
+
+}
+.right input{
+   width: 150px;
+   padding: .3rem;
+   border: .1rem;
+   font-size: 1.2rem;
+   outline: none;
+}
+
+/* works overview */
+
+
+.overview{
+   width: 85%;
+   margin-left: 15%;
+   padding: 1.3rem;
+}
+.client_overview{
+   background-color: #fff;
+   /* display: flex;
+   align-items: center; */
+   padding: 1.4rem 0;
+
+}
+
+.over_icon_item{
+   background-color: #ddd;
+   
+}
+.overview_title{
+   color: #6e6666;
+   font-weight: 600;
+   font-size: 1.3rem;
+   margin: .5rem 0;
+
+}
+.overview_num{
+   color: #000;
+   font-weight: 600;
+   font-size: 1.5rem;
+
+}
+.overview_item{
+   margin: 0 auto;
+   text-align: center;
+}
+.overview_icon {
+   width: 50px;
+   height: 50px;
+   margin-bottom: .8rem;
+   margin: auto;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+}
+.overview_icon i{
+   margin-right: 0;
+   font-size: 1.3rem;
+   color: #fff;
+}
+
+/* work category */
+.work_category_head{
+   font-size: 1.4rem;
+   font-weight: 600;
+   margin-bottom: 2rem;
+   text-align: center;
+}
+.work_category{
+   background-color: #fff;
+   margin-left: .5rem;
+
+}
+
+
+
+
+
+/* My task start */
+
+#myTaskContainer{
+   margin-left: 15%;
+   padding: 1rem 1.3rem;
+
+}
+
+.task_container{
+   background-color: #fff;
+   padding: 1.3rem;
+}
+
+
+
+
+
+
+/*  for table start */
+
+.tabset > input[type="radio"] {
+  position: absolute;
+  left: -200vw;
+}
+
+.tabset .tab-panel {
+  display: none;
+}
+
+.tabset > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabset > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
+.tabset > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabset > input:nth-child(7):checked ~ .tab-panels > .tab-panel:nth-child(4),
+.tabset > input:nth-child(9):checked ~ .tab-panels > .tab-panel:nth-child(5),
+.tabset > input:nth-child(11):checked ~ .tab-panels > .tab-panel:nth-child(6) {
+  display: block;
+}
+
+/*
+ Styling
+*/
+
+.tabset > label {
+  position: relative;
+  display: inline-block;
+  padding: 15px 15px 25px;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.tabset > label::after {
+  content: "";
+  position: absolute;
+  left: 15px;
+  bottom: 10px;
+  width: 22px;
+  height: 4px;
+  background: #8d8d8d;
+}
+
+.tabset > label:hover,
+.tabset > input:focus + label {
+  color: #06c;
+}
+
+.tabset > label:hover::after,
+.tabset > input:focus + label::after,
+.tabset > input:checked + label::after {
+  background: #06c;
+}
+
+.tabset > input:checked + label {
+  border-color: #ccc;
+  border-bottom: 1px solid #fff;
+  margin-bottom: -1px;
+}
+
+.tab-panel {
+  padding: 30px 0;
+  border-top: 1px solid #ccc;
+}
+
+/*
+ Demo purposes only
+*/
+
+.tabset {
+   width: 100%;
+}
+
+
+/* ------------------ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  color: #212121;
+}
+th{
+   font-weight: 600;
+   font-size: 1.4rem;
+}
+td{
+   font-size: 1.3rem;
+   font-weight: 500;
+}
+
+th, td {
+  text-align: left;
+  padding: 16px;
+  
+  
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+table td span{
+   font-size: 1.3rem;
+   margin-right: 1rem;
+   cursor: pointer;
+}
+/* ------------------ */
+
+/* --------new_user_page_header----------- */
+.new_user_page_header{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+
+}
+.new_user_page_header_btn{
+   padding: 1rem;
+   margin-bottom: 1.2rem;
+   background-color: #8ACE3F;
+   color: #fff;
+   font-size: 1rem;
+   font-weight: 700;
+   border-radius: 5px;
+   border: none;
+   outline: none;
+   cursor: pointer;
+}
+.new_user_page_header_btn:hover{
+   box-shadow: 0px 0px 5px #000000;
+}
+/* --------------- */
+
+/* for table end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
